@@ -1,0 +1,230 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    
+    
+}
+html{
+    scroll-behavior: smooth;
+}
+
+.nav{
+    background-color: rgb(225, 219, 234);
+    width: 100%;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    box-shadow: 3px 3px 5px rgba(0, 0,0, 0.2);
+}
+
+.leftnav{
+    width: 40%;
+    flex-direction: column;
+    padding-left: 35px;
+}
+.leftnav h1{
+    color: rgb(95,194,95);
+    font-weight:lighter;
+    cursor: context-menu;
+}
+
+.rightnav{
+    height: 50px;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.rightnav a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+    padding-right: 35px;
+}
+
+.rightnav a:hover{
+    color: rgb(95, 194, 95);
+}
+
+.main{
+    font-family: monospace;
+    text-align: center;
+    margin-top: 30px;
+}
+
+.main h1{
+    position: relative;
+    color: rgb(95,195 , 95);
+    font-weight: lighter;
+    width: max-content;
+    margin: auto;
+}
+.main h1::after{
+    content: '';
+    background-color: gray;
+    height: 4px;
+    width: 40%;
+    position: absolute;
+    bottom: -10px;
+    left: 40px;
+  }
+.main p{
+    font-size: 25px;
+    color: gray;
+}
+
+
+
+.content{
+    width: 90%;
+    height: 90%;
+    display: grid;
+    margin: 40px auto;
+    grid-template-columns: 35% 55%;
+    justify-content: space-evenly;
+}
+.Address{
+    
+    width: 100%;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin: 20px;
+    padding: 20px;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgb(0, 0,0, 0.2);
+    }
+.Address span{
+    color: rgb(95, 194, 95);
+    font-weight: bold;
+    font-size: 18px;
+}
+
+.Address address{
+    color: #000;
+    font-size: 15px;
+    font-style: normal;
+    text-align: left;
+    margin: 5px 10px;
+    font-weight: bold;
+}
+
+.Address a{
+    color: #000;
+    text-decoration: none;
+    margin: 5px 10px;
+    font-size: 15px;
+}
+
+.Address iframe{
+    border: 2px solid black;
+    margin-bottom: 5%;
+}
+
+.form{
+    width: 100%;
+    box-sizing: border-box;
+    box-shadow: 0px 2px 5px rgb(0, 0,0, 0.2);
+    margin: 20px;
+    padding: 20px;
+    display: grid;
+    grid-template-columns: 20% 60%;
+    gap: 15px;
+    text-align: start;
+    color: gray;
+}
+.form label{
+    margin-top: 5px;
+}
+.form input{
+    margin-right: 20px;
+    font-size: 15px;
+    font-weight: lighter;
+    border: 1px solid rgb(95, 194, 95);
+    height: 25px;
+}
+.form #Message{
+    height: 200px;
+    text-align: start;
+    align-items: start;
+}
+textarea {
+  vertical-align: top;
+  padding: 8px; /* or less depending on your design */
+}
+#submit{
+    width: 150px;
+    height: 40px;
+    grid-column: 2/2;
+    background-color: rgb(95, 194, 95);
+    color: #fff;
+    padding: 10px;
+    margin-bottom: 20px;
+    margin-left: 100px;
+    border-radius: 2rem;
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 10px;
+}
+#submit:hover{
+    color: #000;
+    border-color: gray;
+    background-color: gray;
+}
+.top{
+  position:sticky;
+  box-shadow: 2px 2px 3px rgba(0, 0, 0, 0.2);
+  margin-left:90%;
+  bottom: 10px;
+  right: 10px;
+  background-color: rgb(95, 194, 95);
+  width: max-content;
+  border-radius: 2rem;
+  padding: 10px;
+  text-decoration: none;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 2px;
+  z-index: 1000;
+}
+.top:hover{
+  background-color: gray;
+  counter-reset: #000;
+}
+footer {
+    position: relative;
+  margin: 0 auto;
+  padding: 50px;
+  height: 300px;
+   padding-bottom: 0;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  background-color: rgb(225, 219, 234);
+   box-shadow: 0 -5px 5px rgba(0, 0, 0, 0.2);
+  box-sizing: border-box;
+}
+footer p{
+    font-size: 15px;
+    font-weight: bold;
+    color: gray;
+    
+}
+.footer-links a{
+  text-decoration: none;
+  color: #000;
+  font-size: 15px;
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+  padding-bottom: 5px;
+  font-weight: bold
+  
+}
+.footer-links a:hover{
+  color: rgb(95, 194, 95);
+}
